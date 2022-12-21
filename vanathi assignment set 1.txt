@@ -1,0 +1,331 @@
+
+
+1) Odd or Even
+
+
+import java.util.Scanner;
+public class Oddeven {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Scanner scanner =new Scanner(System.in);
+      System.out.println("Enter the Number");
+      int num=scanner.nextInt();
+      if(num%2==0)
+    	  System.out.println("The Entered Number Is EVEN "+num);
+      else
+    	  System.out.println("The Entered Number Is ODD "+num);
+      
+	}
+
+}
+---------------------------------------------------------------------------------
+2) 
+
+import java.util.Scanner;
+import java.lang.Math;
+public class Absoluteval{
+publc static void main(String[] args)
+{
+Scanner scanner =new Scanner(System.in);
+System.out.println("Enter The Number");
+int number=scanner.nextInt();
+int absval=Math.abs(number);
+System.out.prntln("the absolute value for the number" +absval);
+}
+}
+--------------------------------------------------------------------------------
+
+3) total expenses
+
+import java.util.Scanner;
+public class Itemexpense {
+    public static void main(String[] args) {
+    	Scanner scanner=new Scanner(System.in);
+    	System.out.println("Enter the Quantity Of the Item");
+		int quantity=scanner.nextInt();
+		System.out.println("Enter the Price of the item");
+		float price=scanner.nextFloat();
+		float totalExpense=quantity*price;
+        if(totalExpense>=5000)
+        {
+        	 totalExpense=totalExpense-(totalExpense/10);
+        	System.out.println("The Total Expense is"+totalExpense);
+        }
+        else
+        {
+        	System.out.println("The Total Expense is"+totalExpense);	
+        }
+	}
+}
+
+---------------------------------------------------------------------------
+4) Profitloss
+
+import java.util.Scanner;
+public class Profitloss {
+	public static void main(String args[])
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the Cost Price of the item");
+		int costprice=scanner.nextInt();
+		System.out.println("Enter the Selling Price of the item");
+		int sellingprice=scanner.nextInt();
+		if(sellingprice>costprice)
+		{
+			System.out.println("He get a profit");
+			int profit=sellingprice-costprice;
+			System.out.println("profit amount is "+profit);
+		}
+		else
+			if(costprice>sellingprice)
+			{
+				System.out.println("He get a loss");
+				int loss=costprice-sellingprice;
+				System.out.println("Loss amount is "+loss);
+			}
+        
+	}
+
+}
+
+---------------------------------------------------------------------------------
+
+5) Youngest age
+
+import java.util.Scanner;
+import java.util.Scanner;
+public class YoungestAge {
+public static void main(String[] args) {
+			Scanner scanner=new Scanner(System.in);
+			System.out.println("Enter the age of ram");
+			int ramage=scanner.nextInt();
+			System.out.println("Enter the age of sulabh");
+			int sulabhage=scanner.nextInt();
+			System.out.println("Enter the age of ajay");
+			int ajayage=scanner.nextInt();
+			if((ramage<sulabhage)&&(ramage<ajayage))
+			{
+				System.out.println("The  youngest one is RAM");
+			}
+			else if((sulabhage<ramage)&&(sulabhage<ajayage))
+			{
+				System.out.println("The  youngest one is SULABH");
+			}
+			else
+				System.out.println("The  youngest one is AJAY");
+		}
+
+	}
+
+--------------------------------------------------------------------------------------
+
+6) Triangle
+
+import java.util.Scanner;
+public class Traingle {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		
+		System.out.println("Enter the value of angle 1");
+		int angle1=scanner.nextInt();
+		System.out.println("Enter the value of angle 2");
+		int angle2=scanner.nextInt();
+		System.out.println("Enter the value of angle 3");
+		int angle3=scanner.nextInt();
+		int angle=angle1+angle2+angle3;
+		if(angle==180)
+		{
+			System.out.println("valid Triangle");
+		}
+		else
+		{
+			System.out.println("Invalid Triangle");
+		}
+
+	}
+
+}
+
+---------------------------------------------------------------------------------
+
+7) Leap year
+
+import java.util.Scanner;
+public class Leapyr {
+	public static void main(String[] args) {
+     Scanner scanner=new Scanner(System.in);
+	 System.out.println("Enter the year");
+	 int yr=scanner.nextInt();
+	 if((yr%4==0)&&(yr%100==0)||(yr%400==0))
+		 System.out.println("The year is LeapYear"+yr);
+	 else
+	     System.out.println("The Yeae is Not a LeapYear"+yr); 
+  
+	}
+
+}
+
+
+------------------------------------------------------------------------------------
+
+8) employee salary
+
+import java.util.Scanner;
+public class Salary {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Scanner scanner=new Scanner(System.in);
+     System.out.println("Enter the salary amount");
+     int salary=scanner.nextInt();
+     float hra,da,grosssalary;
+     if(salary<1500)
+     {
+    	  hra=salary/10;
+    	  da= salary*90/100;
+    	  grosssalary=salary+hra+da;
+    	  System.out.println("hra"+hra);
+    	  System.out.println("da"+da);
+    	  System.out.println("The grosssalary is "+grosssalary);
+     }
+     else
+     {
+    	 hra=500;
+    	 da=salary*98/100;
+    	 grosssalary=salary+hra+da;
+    	 System.out.println("hra"+hra);
+   	  System.out.println("da"+da);
+    	 System.out.println("The grosssalary is "+grosssalary);
+     }
+     
+	}
+
+}
+
+------------------------------------------------------------------------------------------
+
+9) calls
+
+import java.util.Scanner;;
+public class Calls {
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the number of calls");
+		int calls=scanner.nextInt();
+		double telebill,fsttelebill=0;
+		double balcalls;
+		if(calls>=0&&calls<=100)
+		{
+		  telebill=200;
+			System.out.println("Monthly telephone billing amount "+telebill);
+		}
+		else if(calls>=101&&calls<=150)
+		{
+			calls=calls-100;
+			telebill=200+(calls*0.6);
+			System.out.println("Monthly telephone billing amount "+telebill);
+		}
+		else if(calls>=151&&calls<=200)
+                {
+			calls=calls-150;
+			telebill=200+(50*0.6)+(calls*0.5);
+			System.out.println("Monthly telephone billing amount "+telebill);
+		}
+		else if(calls>200)
+				{
+			calls=calls-200;
+			telebill=200+(50*0.6)+(50*0.5)+(calls*0.4);
+			System.out.println("Monthly telephone billing amount "+telebill);
+				}
+		else
+		{  telebill=200;
+			System.out.println("Monthly telephone billing amount "+telebill);	
+		}
+	}
+
+}
+  -- ----------------------------------------------------------------------------------------------------------
+
+10) student percentage
+
+import java.util.Scanner;
+public class Stdpercentage {
+public static void main(String args[])
+{
+	Scanner scanner=new Scanner(System.in);
+    System.out.println("Enter the student marks");
+    System.out.println("Enter the tamil mark");
+    int tamil=scanner.nextInt();
+    System.out.println("Enter the english mark");
+    int english=scanner.nextInt();
+     System.out.println("Enter the maths mark");
+    int maths=scanner.nextInt();
+    System.out.println("Enter the science mark");
+    int science=scanner.nextInt();
+    System.out.println("Enter the sst mark");
+    int sst=scanner.nextInt();
+  int total=tamil+english+maths+science+sst;
+  int percent=total/5;
+  
+  if(percent>=60)
+  {
+	  System.out.println("FIRST DIVISION");
+  }
+  else if((percent>=50)&&(percent<=59))
+  {
+	  System.out.println("SECOND DIVISION");
+  }
+  else if((percent>=40)&&(percent<=49))
+  {
+	  System.out.println("THIRD DIVISION");
+  }
+  else 
+  {
+	  System.out.println("FAIL");
+  }
+    
+}
+}
+
+
+---------------------------------------------------------------------------------------------
+
+11) Ascii
+
+import java.util.Scanner;
+public class Asciival {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the Character");
+        Scanner scanner=new Scanner(System.in);
+		String str=scanner.next();
+		char ch=str.charAt(0);
+		
+		int asciiValue=(int)ch;
+		
+		if(asciiValue>=65&&asciiValue<=90)
+				{
+			        System.out.println("The Character Enterted is a CAPITAL LETTER");
+				}
+		else if(asciiValue>=97&&asciiValue<=122)
+		{
+			System.out.println("The Character Enterted is a SMALL LETTER");	
+		}
+		else if(asciiValue>=48&&asciiValue<=57)
+		{
+			System.out.println("The Character Enterted is a DIGITS");	
+		}
+		else if((asciiValue>=0&&asciiValue<=47)||(asciiValue>=58&&asciiValue<=64)||(asciiValue>=91&&asciiValue<=96)&&(asciiValue>=123&&asciiValue<=127))
+		{
+			System.out.println("The Character Enterted is a SPECIAL SYMBOL");	
+		}
+		else
+		{
+			System.out.println("Enterted Character is INVALID ");	
+	}
+
+}}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
